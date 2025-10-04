@@ -15,11 +15,3 @@ cadastro
 # Arquivos do sistema
 .DS_Store
 Thumbs.db
-
-# Cache do compilador
-.ccls-cache/
-
-# Configurações de ambiente
-.replit
-replit.md
-attached_assets/
