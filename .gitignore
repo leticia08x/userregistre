@@ -1,0 +1,23 @@
+# Arquivos de configuração do Replit
+.replit
+replit.md
+.ccls-cache/
+attached_assets/
+
+# Executáveis compilados
+cadastro
+*.out
+*.exe
+
+# Arquivos de objeto
+*.o
+*.obj
+
+# Arquivos temporários
+*.tmp
+*.log
+*~
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
