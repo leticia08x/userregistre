@@ -1,0 +1,26 @@
+modules = ["c-clang14"]
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Executar Sistema de Cadastro"
+
+[[workflows.workflow]]
+name = "Executar Sistema de Cadastro"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "clang -o cadastro main.c && ./cadastro"
+
+[workflows.workflow.metadata]
+outputType = "console"
